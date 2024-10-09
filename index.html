@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="background-container">
-    <h1>ODIN</h1>
-    <div class="image-credit">Photo by <a href="https://unsplash.com/@jelle_van_leest">Jelle van Leest</a> on <a href="unsplash.com">Unsplash</a></div>
+    <div class="header">
+      <img src="./images/odin-lined.png" alt="odin-logo" width="75px" height="90px">
+      <h1 title="Odin">ODIN</h1>
+    </div>
+    <div class="image-credit">Photo by <a href="https://unsplash.com/@jelle_van_leest">Jelle van Leest</a> on <a href="https://unsplash.com">Unsplash</a></div>
   </div>
   <div class="form-container">
     <div class="para">
@@ -18,35 +21,33 @@
       <p>You <em>know</em> you want to.</p>
     </div>
     <form action="#" method="get">
-      <section>
+      <section class="user-input">
         <h4>Let's do this!</h4>
-        <ul>
-          <li>
+          <p>
             <label for="first-name">FIRST NAME</label>
             <input type="text" name="first-name" id="first-name">
-          </li>
-          <li>
+          </p>
+          <p>
             <label for="last-name">LAST NAME</label>
             <input type="text" name="last-name" id="last-name">
-          </li>
-          <li>
+          </p>
+          <p>
             <label for="user-email">EMAIL</label>
             <input type="email" name="user-email" id="user-email">
-          </li>
-          <li>
+          </p>
+          <p>
             <label for="tel">PHONE NUMBER</label>
             <input type="tel" name="phone" id="tel">
-          </li>
-          <li>
+          </p>
+          <p>
             <label for="pwd">PASSWORD</label>
             <input type="password" name="pwd" id="pwd" required>
-          </li>
-          <li>
+          </p>
+          <p>
             <label for="pwd-confirm">CONFIRM PASSWORD</label><input type="password" name="pwd-confirm" id="pwd-confirm" required>
-          </li>
-        </ul>
+          </p>
       </section>
-      <section>
+      <section class="button">
         <button type="submit">Create Account</button>
         <div>Already have an account? <a href="#">Log in</a></div>
       </section>
