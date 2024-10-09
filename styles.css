@@ -52,3 +52,36 @@ body{
 }
 
 .image-credit a{color: rgb(245, 245, 245);}
+
+.form-container{
+  font-family: "Roboto", system-ui;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(36, 36, 36);
+
+  width: 65vw;
+  height: 100vh;
+  background: rgb(248, 248, 248);
+
+}
+
+.para p {
+  max-inline-size: 60ch;
+  padding-top: 110px;
+  padding-left: 50px;}
+
+.para > p:last-child{
+  padding-top: 20px;
+  padding-bottom: 45px;
+}
+
+section{
+  padding: 15px 0 15px 50px;
+}
+
+form .user-input{
+  width: 100%;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.10);
+}
