@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-container">
+    <h1>ODIN</h1>
+    <div class="image-credit">Photo by <a href="https://unsplash.com/@jelle_van_leest">Jelle van Leest</a> on <a href="unsplash.com">Unsplash</a></div>
+  </div>
+  <div class="form-container">
+    <div class="para">
+      <p>This is not a real online service! You know you need something like this in your life to help you realize your deepes dreams. Sign up <em>now</em> to get started.</p>
+      <p>You <em>know</em> you want to.</p>
+    </div>
+    <form action="#" method="get">
+      <section>
+        <h4>Let's do this!</h4>
+        <ul>
+          <li>
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name">
+          </li>
+          <li>
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name">
+          </li>
+          <li>
+            <label for="user-email">EMAIL</label>
+            <input type="email" name="user-email" id="user-email">
+          </li>
+          <li>
+            <label for="tel">PHONE NUMBER</label>
+            <input type="tel" name="phone" id="tel">
+          </li>
+          <li>
+            <label for="pwd">PASSWORD</label>
+            <input type="password" name="pwd" id="pwd" required>
+          </li>
+          <li>
+            <label for="pwd-confirm">CONFIRM PASSWORD</label><input type="password" name="pwd-confirm" id="pwd-confirm" required>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <button type="submit">Create Account</button>
+        <div>Already have an account? <a href="#">Log in</a></div>
+      </section>
+    </form>
+  </div>
+</body>
+</html>
