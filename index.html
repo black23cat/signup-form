@@ -8,24 +8,27 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="background-container">
+  
+  <div class="sidebar-container">
     <div class="header">
       <img src="./images/odin-lined.png" alt="odin-logo" width="75px" height="90px">
       <h1 title="Odin">ODIN</h1>
     </div>
     <div class="image-credit">Photo by <a href="https://unsplash.com/@jelle_van_leest">Jelle van Leest</a> on <a href="https://unsplash.com">Unsplash</a></div>
   </div>
-  <div class="form-container">
+
+  <div class="content-container">
     <div class="para">
       <p>This is not a real online service! You know you need something like this in your life to help you realize your deepes dreams. Sign up <em>now</em> to get started.</p>
       <p>You <em>know</em> you want to.</p>
     </div>
     <form action="#" method="get">
       <section class="user-input">
-        <h4>Let's do this!</h4>
+        <p>Let's do this!</p>
+        <div class="split-form">
           <p>
             <label for="first-name">FIRST NAME</label>
-            <input type="text" name="first-name" id="first-name">
+            <input type="text" name="first-name" id="first-name" >
           </p>
           <p>
             <label for="last-name">LAST NAME</label>
@@ -33,7 +36,7 @@
           </p>
           <p>
             <label for="user-email">EMAIL</label>
-            <input type="email" name="user-email" id="user-email">
+            <input type="email" name="user-email" id="user-email" >
           </p>
           <p>
             <label for="tel">PHONE NUMBER</label>
@@ -43,13 +46,15 @@
             <label for="pwd">PASSWORD</label>
             <input type="password" name="pwd" id="pwd" required>
           </p>
-          <p>
+            <p>
             <label for="pwd-confirm">CONFIRM PASSWORD</label><input type="password" name="pwd-confirm" id="pwd-confirm" required>
+            <span class="required"></span>
           </p>
+        </div>
       </section>
       <section class="button">
         <button type="submit">Create Account</button>
-        <div>Already have an account? <a href="#">Log in</a></div>
+        <p class="login">Already have an account? <a href="#">Log in</a></p>
       </section>
     </form>
   </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @font-face {
   font-family: 'norsebold';
   src: url('./font/nord-bold/norse-bold-webfont.woff2') format('woff2'),
@@ -6,16 +8,17 @@
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+:root{
+  --shdw-clr: rgb(170, 170, 170)
+}
 
 body{
   display: flex;
   flex-direction: row;
 }
 
-.background-container{
-  width: 35vw;
+.sidebar-container{
+  width: 40vw;
   height: 100vh;
   background-image: url(./images/jelle-van-leest-0bDfVKA3ys0-unsplash.jpg);
   background-repeat: no-repeat;
@@ -23,7 +26,6 @@ body{
 
   position: relative;
   color: rgb(255, 255, 255);
-  text-align: center;
 }
 
 .header{
@@ -53,13 +55,13 @@ body{
 
 .image-credit a{color: rgb(245, 245, 245);}
 
-.form-container{
+.content-container{
   font-family: "Roboto", system-ui;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 600;
-  color: rgb(36, 36, 36);
+  color: rgb(55, 55, 55);
 
-  width: 65vw;
+  width: 60vw;
   height: 100vh;
   background: rgb(248, 248, 248);
 
@@ -67,8 +69,8 @@ body{
 
 .para p {
   max-inline-size: 60ch;
-  padding-top: 110px;
-  padding-left: 50px;}
+  padding-top: 120px;
+  padding-left: 70px;}
 
 .para > p:last-child{
   padding-top: 20px;
@@ -76,12 +78,98 @@ body{
 }
 
 section{
-  padding: 15px 0 15px 50px;
+  padding: 15px 0 15px 70px;
 }
 
 form .user-input{
   width: 100%;
-
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.10);
+}
+
+.user-input >div{
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+section p{
+  width: 250px;
+}
+
+label{
+  display: inline-block;
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgb(100, 100, 100);
+  letter-spacing: 1px;
+
+  width: 100%;
+}
+
+input{
+  font-size: 0.9rem;
+  font-weight: 400;
+  width: 250px;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 5px;
+  padding: 4px 12px;
+}
+
+input:focus{
+  outline: 0.5px solid rgb(51, 81, 255);
+  box-shadow: 2px 2px 4px var(--shdw-clr);
+}
+
+input:invalid{
+  outline: 0.5px solid rgb(255, 46, 46);
+}
+
+.split-form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  width: min(600px, 80%)
+}
+
+button{
+  background-color: rgb(83, 112, 58);
+  color: rgb(245, 245, 245);
+
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding: 8px 45px;
+  box-shadow: 0 3px 5px var(--shdw-clr);
+}
+
+button:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.login{
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.login a{
+  text-decoration: none;
+  color: rgb(83, 112, 58);;
+}
+
+.required{
+  position: relative;
+}
+
+span::before{
+  content: "*Passwod do not match";
+  position: relative;
+  font-size: 10px;
+  top: -10px;
+  left: 4px;
+  color: rgb(255, 100, 100);
 }
