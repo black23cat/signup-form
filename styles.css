@@ -1,3 +1,4 @@
+/* Font import local and online */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
@@ -8,6 +9,7 @@
   font-style: normal;
 }
 
+/* Css Variable */
 :root{
   --shdw-clr: rgb(170, 170, 170)
 }
@@ -17,6 +19,7 @@ body{
   flex-direction: row;
 }
 
+/* Sidebar styling */
 .sidebar-container{
   width: 40vw;
   height: 100vh;
@@ -55,6 +58,7 @@ body{
 
 .image-credit a{color: rgb(245, 245, 245);}
 
+/* Content styling */
 .content-container{
   font-family: "Roboto", system-ui;
   font-size: 1.3rem;
@@ -77,6 +81,7 @@ body{
   padding-bottom: 45px;
 }
 
+/* Form styling */
 section{
   padding: 15px 0 15px 70px;
 }
@@ -133,6 +138,20 @@ input:invalid{
   width: min(600px, 80%)
 }
 
+.required{
+  position: relative;
+}
+
+span::before{
+  content: "*Passwod do not match";
+  position: relative;
+  font-size: 10px;
+  top: -10px;
+  left: 4px;
+  color: rgb(255, 100, 100);
+}
+
+/* Button styling */
 button{
   background-color: rgb(83, 112, 58);
   color: rgb(245, 245, 245);
@@ -161,15 +180,3 @@ button:hover{
   color: rgb(83, 112, 58);;
 }
 
-.required{
-  position: relative;
-}
-
-span::before{
-  content: "*Passwod do not match";
-  position: relative;
-  font-size: 10px;
-  top: -10px;
-  left: 4px;
-  color: rgb(255, 100, 100);
-}
